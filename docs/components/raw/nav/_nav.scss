@@ -1,0 +1,73 @@
+.c-nav {
+    box-shadow: 0 6px 5px 0 rgba(0,0,0,0.30);
+    overflow: visible;
+    position: relative;
+    z-index: 100!important;
+    background: white;
+}
+.c-nav ul{
+    @extend %list--unstyled;
+    @extend %h4;
+    text-transform: uppercase;
+    background: rgba(color(neutral--darkest), 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: space(m);
+    margin: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index:1;
+    .js-nav-active & {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    @include bp(lg){
+        background: transparent;
+        transform: translateX(0%);
+        opacity: 1;
+        position: static;
+        visibility: visible;
+        background: transparent;
+        li {
+            display: inline-block;
+            position: relative;
+            &:after {
+                content: "/";
+                display: inline;
+            }
+        }
+        li:last-child {
+            &:after {
+                displaY: none;
+            }
+            a {
+                padding-right: 0;
+            }
+        }
+    }
+    
+    a {
+        display: block;
+        transition: color 0.2s ease-in-out;
+        padding: space(s) 0;
+        color: white;
+        @include bp(lg){
+            color: color(neutral);
+            display: inline-block;
+            padding: space(m);
+            &:hover {
+                color: color(primary);
+            }
+        }
+    }
+
+    li.active a {
+        color: color(primary);
+    }
+}

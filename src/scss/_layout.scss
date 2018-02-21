@@ -1,0 +1,25 @@
+.l-container {
+    margin-bottom: space(m);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 space(m);
+    &--narrow {
+        max-width: 800px;
+    }
+}
+
+
+.l-container--flex {
+    display: flex;
+    flex-direction: column;
+    @include bp(m){
+        flex-direction: row;
+        .l-third {
+            flex: 0 0 33.333%;
+            padding-right: space(xl);
+        }
+        .l-two-thirds {
+            flex: 1 0 66.666%;
+        }
+    }
+}

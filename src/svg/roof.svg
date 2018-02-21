@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="46px" viewBox="0 0 96 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>roof</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="roof" fill-rule="nonzero" fill="#000000">
+            <g id="Shape">
+                <path d="M2,45 C1.44,45 0.888,44.764 0.492,44.312 C-0.232,43.48 -0.144,42.22 0.688,41.488 L46.688,1.488 C47.44,0.832 48.56,0.832 49.312,1.488 L60,10.78 L60,3 C60,1.896 60.9,1 62,1 L74,1 C75.1,1 76,1.9 76,3 L76,24.7 L95.312,41.492 C96.144,42.22 96.232,43.484 95.508,44.32 C94.784,45.156 93.516,45.236 92.684,44.516 L72.684,27.124 C72.252,26.74 71.996,26.196 71.996,25.616 L71.996,5 L63.996,5 L63.996,15.168 C63.996,15.952 63.54,16.66 62.828,16.988 C62.12,17.312 61.28,17.192 60.684,16.676 L47.996,5.648 L3.308,44.508 C2.932,44.84 2.468,45 2,45 L2,45 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

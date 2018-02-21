@@ -1,0 +1,39 @@
+.c-services {
+    background-color: color(neutral--lightest);
+    background-image:url(../img/arrows.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: space(xl);
+    padding-bottom: space(xl);
+}
+
+.c-services__list {
+    @extend %list--unstyled;
+    padding-top: space(l);
+    @include bp(m){
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+}
+
+.c-services__item {
+    padding: 0 space(l);
+    text-align: center;
+    
+    @include bp(m){
+        flex: 1 0 50%;
+    }
+    @include bp(lg){
+        flex: 1 0 25%;
+    }
+    h3 {
+        margin-bottom: space(l);
+    }
+    svg {
+        display: block;
+        margin: 0 auto space(l);
+        max-width: 8em;
+    }
+}
